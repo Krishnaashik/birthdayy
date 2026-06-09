@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Ashiiiii 💎</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+overflow:hidden;
+background:linear-gradient(135deg,#ffd6e7,#ffeef5,#fff4c7);
+}
+
+.page{
+position:absolute;
+width:100%;
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+overflow:hidden;
+transition:1s;
+}
+
+#page2{
+display:none;
+background:linear-gradient(135deg,#fff5f5,#fff8d8,#ffe8ef);
+padding:60px 20px 40px;
+overflow-y:auto;
+justify-content:flex-start;
+align-items:center;
+}
+
+h1{
+font-size:3rem;
+text-align:center;
+color:#ff2d75;
+text-shadow:0 0 20px rgba(255,0,102,.4);
+z-index:5;
+padding:15px;
+}
+
+.panda-container{
+position:relative;
+width:320px;
+height:420px;
+display:flex;
+justify-content:center;
+align-items:flex-end;
+}
+
+/* Panda */
+
+.panda{
+font-size:150px;
+position:absolute;
+bottom:0;
+z-index:2;
+}
+
+/* Balloon Area */
+
+.balloon-group{
+position:absolute;
+bottom:170px;
+left:50%;
+transform:translateX(-50%);
+width:220px;
+height:250px;
+animation:sway 4s ease-in-out infinite;
+}
+
+@keyframes sway{
+0%,100%{transform:translateX(-50%) rotate(-4deg);}
+50%{transform:translateX(-50%) rotate(4deg);}
+}
+
+.balloon{
+position:absolute;
+width:45px;
+height:60px;
+border-radius:50%;
+}
+
+.balloon:after{
+content:'';
+position:absolute;
+width:2px;
+height:130px;
+background:#444;
+top:55px;
+left:50%;
+}
+
+.b1{
+background:#ff4d4d;
+left:10px;
+top:20px;
+}
+
+.b2{
+background:#00d4ff;
+left:70px;
+top:0;
+}
+
+.b3{
+background:#ffdd00;
+left:125px;
+top:25px;
+}
+
+.b4{
+background:#8b5cf6;
+left:45px;
+top:60px;
+}
+
+.b5{
+background:#00ff8c;
+left:140px;
+top:80px;
+}
+
+.b6{
+background:#ff6ec7;
+left:90px;
+top:100px;
+}
+
+.btn{
+margin-top:25px;
+padding:14px 30px;
+font-size:1rem;
+border:none;
+border-radius:50px;
+background:linear-gradient(45deg,#ff4d88,#ff7eb3);
+color:white;
+cursor:pointer;
+box-shadow:0 8px 25px rgba(255,0,102,.3);
+z-index:5;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+/* Floating Emojis */
+
+.float{
+position:absolute;
+font-size:28px;
+animation:floatUp linear infinite;
+opacity:.8;
+}
+
+@keyframes floatUp{
+0%{
+transform:translateY(100vh) rotate(0deg);
+opacity:0;
+}
+20%{
+opacity:1;
+}
+100%{
+transform:translateY(-120vh) rotate(360deg);
+opacity:0;
+}
+}
+
+.letter{
+max-width:800px;
+width:100%;
+margin-top:40px;
+margin-bottom:40px;
+background:rgba(255,255,255,.75);
+backdrop-filter:blur(8px);
+padding:30px;
+border-radius:25px;
+box-shadow:0 10px 40px rgba(0,0,0,.1);
+z-index:5;
+}
+
+.letter h2{
+color:#ff2d75;
+text-align:center;
+margin-bottom:20px;
+}
+
+.letter p{
+line-height:1.9;
+font-size:1.05rem;
+color:#444;
+text-align:center;
+}
+
+@media(max-width:768px){
+
+h1{
+font-size:2rem;
+padding:20px;
+}
+
+.panda{
+font-size:120px;
+}
+
+.balloon-group{
+transform:translateX(-50%) scale(.8);
+}
+
+#page2{
+padding-top:90px;
+padding-bottom:50px;
+}
+
+.letter{
+width:95%;
+margin-top:20px;
+padding:20px;
+}
+
+.letter p{
+font-size:.98rem;
+}
+}
+</style>
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+
+<div class="page" id="page1">
+
+<div class="panda-container">
+
+<div class="balloon-group">
+<div class="balloon b1"></div>
+<div class="balloon b2"></div>
+<div class="balloon b3"></div>
+<div class="balloon b4"></div>
+<div class="balloon b5"></div>
+<div class="balloon b6"></div>
+</div>
+
+<div class="panda">🐼</div>
+
+</div>
+
+<h1>Happy Birthday Ashiiiii 💎</h1>
+
+<button class="btn" onclick="openLetter()">
+🎀 Here We Go With A Gift Ribbon
+</button>
+
+</div>
+
+<!-- PAGE 2 -->
+
+<div class="page" id="page2">
+
+<div class="letter">
+
+<h2>To The Most Precious Soul 💎❤️</h2>
+
+<p>
+Happy Birthday, Ashiiiii 💎✨
+<br><br>
+
+Happy Birthday to the most beautiful man I have ever met........🫶🏻to the man💎 who offer me the purest form of love, who made me feel like I'm worthy to be loved & loved me with your whole heart once and almost my first time in everything......made me realise what real love actually feels like -   beyond attraction, infatuation and obsession🥰 you made the 8 months of my life the most memorable and beautiful.......you always hold a special place in my heart ❤️ you are always my favourite in many more ways and things💌.....always hold the first place in my prayers, my dream, almost everywhere, i cherish each and every moment we spend together👩‍❤️‍👨 you are always special and a gem 💎 as I always said, worthy to be waited for, may the universe, god or positive energy 
+whatever it is called 🌀pour you with lotsss of loveeee and happiness you deserve, loadsss and loadsss of gifts🎁, surprises and love from your loved one's on your special day🎂always keep that smile on your face ,it makes you even more attractive😇......you are loved, you are love 💕always you will be the 'Manjamandhaaram💛 'of my life. I always loved you koreee koreee koreeee.🫶🏻Happy birthday Love ♾️
+Couldn't resist myself from sending you letters and make you feel special 🤐🥲🥹
+Happy Birthday once again, Ashiiiii 💎✨
+With Love,
+Kinu🫂
+
+
+
+</p>
+
+</div>
+
+</div>
+
+<script>
+
+function createEmoji(page, emojis){
+
+const emoji=document.createElement("div");
+emoji.className="float";
+emoji.innerHTML=emojis[Math.floor(Math.random()*emojis.length)];
+
+emoji.style.left=Math.random()*100+"vw";
+emoji.style.fontSize=(20+Math.random()*25)+"px";
+emoji.style.animationDuration=(6+Math.random()*8)+"s";
+
+page.appendChild(emoji);
+
+setTimeout(()=>{
+emoji.remove();
+},14000);
+}
+
+setInterval(()=>{
+createEmoji(
+document.getElementById("page1"),
+["❤️","❤️","❤️","♾️","💎","⭐","✨"]
+);
+},300);
+
+setInterval(()=>{
+createEmoji(
+document.getElementById("page2"),
+["❤️","💛","❤️","💛","♾️","😘","💋"]
+);
+},350);
+
+function openLetter(){
+document.getElementById("page1").style.display="none";
+document.getElementById("page2").style.display="flex";
+}
+
+</script>
+
+</body>
+</html>
